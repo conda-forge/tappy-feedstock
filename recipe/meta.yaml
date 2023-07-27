@@ -19,16 +19,18 @@ build:
 requirements:
   host:
     - python >=3.7.1
+    - pip
     - setuptools >=45
     - setuptools-scm >=6.2
     - wheel
-    - pip
   run:
     - python >=3.7.1
-    - toolbox_utils >=5.0.0,<6.0.0
     - astronomia
     - cltoolbox
     - numpy
+    - pyparsing
+    - scipy
+    - toolbox_utils >=5.0.0,<6.0.0
 
 test:
   imports:
