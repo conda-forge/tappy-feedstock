@@ -30,7 +30,11 @@ requirements:
     - numpy
     - pyparsing
     - scipy
-    - toolbox_utils >=5.0.0,<6.0.0
+    - pandas
+    - skyfield
+    - pint-pandas
+    - tabulate
+    - dateparser
 
 test:
   imports:
