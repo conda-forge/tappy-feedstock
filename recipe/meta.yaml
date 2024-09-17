@@ -27,14 +27,25 @@ requirements:
     - python >=3.7.1
     - astronomia
     - cltoolbox
-    - numpy
     - pyparsing
-    - scipy
-    - pandas
+    - pywavelets
     - skyfield
-    - pint-pandas
-    - tabulate
     - dateparser
+    - matplotlib-base >=3.3.2
+    - numpy
+    - odfpy >=1.4.1
+    - openpyxl >=3.0.7
+    - pandas
+    - pint !=0.21
+    - pint-pandas
+    - pydantic
+    - pytables >=3.6.1
+    - pyxlsb >=1.0.8
+    - scipy
+    - tabulate
+    - typing-extensions
+    - xlrd >=2.0.1
+    - xlsxwriter                                                                 
 
 test:
   imports:
