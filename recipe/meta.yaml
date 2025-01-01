@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tappy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tappy-{{ version }}.tar.gz
   sha256: 76e8c2a855eb0f532cc36e1a134bb3d5795de117f1100b5547e1ffbe3556c4cb
 
 build:
@@ -14,17 +14,17 @@ build:
     - tappy = tappy.tappy:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7.1
+    - python {{ python_min }}
     - pip
     - setuptools >=45
     - setuptools-scm >=6.2
     - wheel
   run:
-    - python >=3.7.1
+    - python >={{ python_min }}
     - astronomia
     - cltoolbox
     - pyparsing
@@ -55,6 +55,7 @@ test:
     - tappy --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   summary: Command line script and Python library perform tidally-based analysis of water level data.
