@@ -1,5 +1,5 @@
 {% set name = "tappy" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tappy-{{ version }}.tar.gz
-  sha256: 658472c086d76de84631804479495987a5b1ba84ba4136f67473d928f3adf6a7
+  sha256: ebf7f2948c7a6d73bcd2a498195edc429d40234fb5c0c83eab7fad638d5417ba
 
 build:
   entry_points:
