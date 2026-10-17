@@ -42,6 +42,7 @@ requirements:
     - pydantic
     - pyparsing
     - pytables >=3.6.1
+    - pywavelets
     - pyxlsb >=1.0.8
     - scipy
     - skyfield
