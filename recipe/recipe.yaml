@@ -28,12 +28,9 @@ requirements:
     - setuptools-scm >=6.2
     - wheel
   run:
-    - python >=${{ python_min }}
+    - python >=3.10
     - astronomia
     - cltoolbox
-    - pyparsing
-    - pywavelets
-    - skyfield
     - dateparser
     - matplotlib-base >=3.3.2
     - numpy
@@ -43,9 +40,12 @@ requirements:
     - pint !=0.21
     - pint-pandas
     - pydantic
+    - pyparsing
     - pytables >=3.6.1
+    - pywavelets
     - pyxlsb >=1.0.8
     - scipy
+    - skyfield
     - tabulate
     - typing-extensions
     - xlrd >=2.0.1
