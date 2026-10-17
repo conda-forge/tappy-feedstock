@@ -45,6 +45,7 @@ requirements:
     - pywavelets
     - pyxlsb >=1.0.8
     - scipy
+    - sgp4 >=2.13
     - skyfield
     - tabulate
     - typing-extensions
